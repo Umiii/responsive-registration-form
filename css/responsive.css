@@ -5,20 +5,19 @@
 */
 
 
+@media only screen and  (min-width: 768px) {
 
-/*************************
-*******Typography******
-**************************/
+    /*************************
+    ***** Structural Styles ***
+    **************************/
 
-* {
-    box-sizing: border-box;
-}
+    .container {
+        max-width: 1200px;
+    }
 
-body {
-    font-family: 'Roboto', "Helvetica Neue", sans-serif;
-    color:#413d3d;
-}
+    /**********************************
+    **** Header & Navigation Styles ***
+    **********************************/
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', sans-serif;
+
 }

@@ -12,3 +12,69 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #2d3945;
+}
+
+
+/*************************
+***** Structural Styles ***
+**************************/
+
+ul li {
+    list-style: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    text-decoration: none;
+
+}
+
+
+i:hover, a:hover {
+    outline: none;
+    text-decoration:none;
+}
+
+.container {
+    max-width:90%;
+    margin:0 auto;
+    padding:10px;
+}
+
+
+/**********************************
+**** Header & Navigation Styles ***
+**********************************/
+
+header h3 {
+    color:white;
+    text-align: center;
+    padding:0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/**********************************
+**** Sign Up Text Section  ********
+**********************************/
+.sign-up-text {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #2d3945;
+}
+
+.sign-up-text h3 {
+    text-align:center;
+    margin:0 0 10px;
+}
+
+.sign-up-text p {
+    color: #aaafb4;
+    padding:0 15px;
+    margin-top:5px;
+    text-align:center;
+}
