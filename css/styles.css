@@ -12,8 +12,23 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: #2d3945;
+body {
+    font-family: 'Raleway', sans-serif;
+    color:#617383
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
 }
 
 
@@ -43,7 +58,6 @@ i:hover, a:hover {
 .container {
     max-width:90%;
     margin:0 auto;
-    padding:10px;
 }
 
 
@@ -51,25 +65,31 @@ i:hover, a:hover {
 **** Header & Navigation Styles ***
 **********************************/
 
+header {
+    background-color: #2d3945;
+}
+
 header h3 {
     color:white;
     text-align: center;
-    padding:0;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    margin:0;
+    padding:1.4rem;
 }
 
 /**********************************
 **** Sign Up Text Section  ********
 **********************************/
+
 .sign-up-text {
     padding-bottom: 1rem;
-    border-bottom: 3px solid #2d3945;
+    border-bottom: 4px solid #2d3945;
 }
 
 .sign-up-text h3 {
     text-align:center;
-    margin:0 0 10px;
+    margin:20px 0 10px;
 }
 
 .sign-up-text p {
@@ -77,4 +97,93 @@ header h3 {
     padding:0 15px;
     margin-top:5px;
     text-align:center;
+    font-size:14px;
+}
+
+
+/**********************************
+**** Contact Form Section  ********
+**********************************/
+.sign-up-form {
+    margin-top: -7px;
+}
+
+
+.contact-form {
+    margin-top:10px;
+    border-top:2px solid #2d3945;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+
+fieldset {
+    border:none;
+    padding:0;
+}
+
+.contact-form fieldset:first-of-type {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #2d3945;
+}
+
+.contact-form fieldset:last-of-type {
+    position:relative;
+}
+
+.contact-form legend {
+    font-size:1.2rem;
+    margin-bottom:1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-top:10px;
+}
+
+.contact-form input {
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding:15px 8px;
+    width: 100%;
+    background-color: #eeeeee;
+    border:none;
+}
+
+.newsletter-heading {
+    padding-top:25px;
+}
+
+.contact-form input[type="checkbox"] {
+    max-width:3%;
+    position:absolute;
+}
+
+.check-html {
+    top:6.43rem;
+    left:0;
+}
+
+.check-css {
+    top:8.24rem;
+    left:0;
+}
+
+.check-js {
+    top:9.92rem;
+    left:0;
+}
+
+.newsletter-section > label {
+    padding-left:20px;
+}
+
+.newsletter-section > label:first-of-type {
+    padding:0;
+    margin-bottom:20px;
+}
+
+.format-section {
+    margin-top: 25px;
 }

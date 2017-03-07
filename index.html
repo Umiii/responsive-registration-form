@@ -8,7 +8,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700|Sacramento" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700" rel="stylesheet">
     </head>
     <body>
 
@@ -18,36 +18,38 @@
             </div>
         </header>
 
-        <section class="sign-up-text">
-            <div class="container">
+        <div class="container">
+            <section class="sign-up-text">
+
                 <h3>Signup for our newsletter</h3>
                 <p>Get the latest news on how your code is doing right
                    in your inbox.
                 </p>
-            </div>
-        </section>
 
-        <section class="contact-form">
-            <div class="container">
-                <form>
+            </section>
+        </div>
+
+        <div class="container sign-up-form">
+            <section class="contact-form">
+                <form action="" method="post">
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label for="full-name">Full Name</label>
                         <input type="text" id="full-name" name="f_name">
 
-                        <label for="email">Email</label>
+                        <label for="email">Email Address</label>
                         <input type="email" id="email" name="email">
 
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="tel-num">
 
-                        <label for="address">Full Name</label>
+                        <label for="address">Street Address</label>
                         <input type="text" id="address" name="address">
 
-                        <label for="city"></label>
+                        <label for="city">City</label>
                         <input type="text" id="city" name="city">
 
-                        <label for="state"></label>
+                        <label for="state">State</label>
                         <select id="state" name="state">
                             <option>Lagos</option>
                             <option>Abuja</option>
@@ -59,24 +61,26 @@
                         <input type="text" id="zip" name="zip-code">
                     </fieldset>
 
-                    <fieldset>
-                        <legend>Newsletter</legend>
+                    <fieldset class="newsletter-section">
+                        <legend class="newsletter-heading">Newsletter</legend>
                         <label>Select the newsletter you would like to receive.</label>
 
-                        <input type="checkbox" id="html-news" name="html">
                         <label for="html-news">HTML News</label>
+                        <input type="checkbox" id="html-news" name="html" class="check-html">
 
-                        <input type="checkbox" id="css-news" name="css">
                         <label for="css-news">CSS News</label>
+                        <input type="checkbox" id="css-news" name="css" class="check-css">
 
-                        <input type="checkbox" id="js" name="js">
                         <label for="js">Javascript News</label>
+                        <input type="checkbox" id="js" name="js" class="check-js">
 
-                        <label>Newsletter Format</label>
-                        <input type="radio" id="html-radio" name="news-option">
-                        <label for="html-radio">HTML</label>
-                        <input type="radio" id="text-radio" name="news-option">
-                        <label for="text-radio">Plain Text</label>
+                        <div class="format-section">
+                            <label>Newsletter Format</label><br>
+                            <label for="html-radio">HTML</label>
+                            <input type="radio" id="html-radio" name="news-option">
+                            <input type="radio" id="text-radio" name="news-option">
+                            <label for="text-radio">Plain Text</label>
+                        </div>
 
                         <label for="topics">Other topics you would like to hear about.</label>
                         <textarea id="topics" name="topic" cols="50" rows="10"></textarea>
@@ -85,9 +89,8 @@
                     </fieldset>
 
                 </form>
+            </section>
         </div>
-
-        </section>
 
     </body>
 </html>
