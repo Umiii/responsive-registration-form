@@ -161,6 +161,9 @@ fieldset:last-of-type {
     border:none;
     transition: all 0.9s ease;
 }
+.contact-form select {
+    color:#7b7b7b;
+}
 
 
 
