@@ -141,6 +141,10 @@ fieldset:last-of-type {
     font-size:1.2rem;
 }
 
+.contact-form legend:first-of-type {
+    margin-bottom:1.3rem;
+}
+
 .contact-form label {
     display: block;
     margin-top:10px;
@@ -172,7 +176,7 @@ fieldset:last-of-type {
 {
     font-style: italic;
     text-align:right;
-    font-weight: 400;
+    font-size:0.9rem;
 }
 
 .contact-form textarea::-moz-placeholder,.contact-form input::-moz-placeholder {
