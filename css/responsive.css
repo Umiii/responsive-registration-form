@@ -15,9 +15,31 @@
         max-width: 600px;
     }
 
+    .form-control-zip label, .form-control label {
+        display: inline-block;
+        width:29%;
+
+    }
+
+    .form-control select, .form-control input {
+        max-width:69%;
+    }
+
+    .form-control-zip input {
+        max-width:20%;
+    }
+
+
+
+
+
+
     /**********************************
-    **** Header & Navigation Styles ***
+    **** Contact Form Section  ********
     **********************************/
+    
 
-
+    .zip {
+        max-width: 25%;
+    }
 }

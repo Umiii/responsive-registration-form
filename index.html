@@ -8,7 +8,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,400i,700" rel="stylesheet">
     </head>
     <body>
 
@@ -34,62 +34,89 @@
                 <form action="" method="post">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="f_name">
 
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
+                        <div class="form-control">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="f_name" placeholder="Required" required>
+                        </div>
 
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="tel-num">
+                        <div class="form-control">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Required" required>
+                        </div>
 
-                        <label for="address">Street Address</label>
-                        <input type="text" id="address" name="address">
+                        <div class="form-control">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="tel-num" placeholder="(234) 809 999 999">
+                        </div>
 
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city">
+                        <div class="form-control">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="address" placeholder="Street Address">
+                        </div>
 
-                        <label for="state">State</label>
-                        <select id="state" name="state">
-                            <option>Lagos</option>
-                            <option>Abuja</option>
-                            <option>Port Harcourt</option>
-                            <option>Kano</option>
-                        </select>
+                        <div class="form-control">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="City">
+                        </div>
 
-                        <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="zip-code">
+                       <div class="form-control">
+                            <label for="state">State</label>
+                            <select id="state" name="state">
+                                    <option disabled selected>Select State</option>
+                                    <option>Lagos</option>
+                                    <option>Abuja</option>
+                                    <option>Port Harcourt</option>
+                                    <option>Kano</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-control-zip">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip-code" class="zip">
+                        </div>
                     </fieldset>
 
                     <fieldset class="newsletter-section">
                         <legend class="newsletter-heading">Newsletter</legend>
-                        <label>Select the newsletter you would like to receive.</label>
+                        <label>Select the newsletters you would like to receive</label>
 
-                        <label for="html-news">HTML News</label>
-                        <input type="checkbox" id="html-news" name="html" class="check-html">
+                        <div class="newsletter-options">
+                            <label for="html-news">HTML News</label>
+                            <input type="checkbox" id="html-news" name="html">
+                        </div>
 
-                        <label for="css-news">CSS News</label>
-                        <input type="checkbox" id="css-news" name="css" class="check-css">
+                        <div class="newsletter-options">
+                            <label for="css-news">CSS News</label>
+                            <input type="checkbox" id="css-news" name="css">
+                        </div>
 
-                        <label for="js">Javascript News</label>
-                        <input type="checkbox" id="js" name="js" class="check-js">
+                        <div class="newsletter-options">
+                            <label for="js">Javascript News</label>
+                            <input type="checkbox" id="js" name="js">
+                        </div>
 
                         <div class="format-section">
                             <label>Newsletter Format</label><br>
-                            <label for="html-radio">HTML</label>
-                            <input type="radio" id="html-radio" name="news-option">
-                            <input type="radio" id="text-radio" name="news-option">
-                            <label for="text-radio">Plain Text</label>
+                            <div class="newsletter-options">
+                                <label for="html-radio">HTML</label>
+                                <input type="radio" id="html-radio" name="news-option">
+                            </div>
+                            <div class="newsletter-options">
+                                <input type="radio" id="text-radio" name="news-option">
+                                <label for="text-radio">Plain Text</label></div>
                         </div>
 
-                        <label for="topics">Other topics you would like to hear about.</label>
-                        <textarea id="topics" name="topic" cols="50" rows="10"></textarea>
+                        <label for="topics" class="topic-label">Other topics you would like to hear about.</label>
+                        <textarea id="topics" name="topic" rows="5" placeholder="We would love to hear from you."></textarea>
 
-                        <button class="btn-signup">Sign Up</button>
+                        <button type="submit" class="btn-signup">Sign Up</button>
                     </fieldset>
-
                 </form>
+                <p class="center">Copyright. The Code Review</p>
             </section>
+        </div>
         </div>
 
     </body>
