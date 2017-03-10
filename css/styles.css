@@ -159,7 +159,7 @@ fieldset:last-of-type {
     width: 100%;
     background-color: #eeeeee;
     border:none;
-    transition: all 0.9s ease;
+    transition: all 1s ease;
 }
 .contact-form select {
     color:#7b7b7b;
