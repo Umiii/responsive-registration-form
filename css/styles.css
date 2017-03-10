@@ -224,9 +224,6 @@ fieldset:last-of-type {
     position:relative;
 }
 
-option:disabled,  {
-    color: #617383;
-}
 
 .newsletter-options label {
     position:absolute;
