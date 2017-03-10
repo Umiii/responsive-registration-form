@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    color:#617383
+    color:#617383;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -169,7 +169,7 @@ fieldset:last-of-type {
 
 .newsletter-section textarea:focus, .contact-form select:focus, .contact-form input:focus {
     background-color:#d7d6d6;
-    border:1px solid #000;
+    border:1px solid #888888;
     outline: none;
     transition: all 0.9s ease;
 }
